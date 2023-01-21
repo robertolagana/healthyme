@@ -1,0 +1,257 @@
+/* CSS Document */
+/*Elements*/
+html{
+	font-size: 1.2rem;
+}
+body {
+  font-family: 'Dosis';
+  text-align: center;
+  background-color: #161616;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+/*Containers*/
+.title-container {
+  padding: 4% 10%;
+}
+.nm-section-container {
+  padding: 1% 10%;
+}
+.pi-section-container {
+  padding: 2% 10% 2.5%; 
+}
+.su-section-container {
+  padding: 0 10% 2%; 
+}
+.fe-section-container {
+  padding: 2% 10% 2.5%; 
+}
+.ru-section-container {
+  padding: 0 10% 2%; 
+}
+.cat-nv-section-container {
+ padding: 2% 2% 2%;
+}
+.footer-container {
+  padding: 4% 10%;
+}
+/*Colours & Headings*/
+.dark-section {
+  background-color: #161616;
+  color: #ffffff;
+}
+.light-section {
+  background-color: #E7E7E7;
+  color: #000000;
+}
+.colored-section {
+  background-color: #FFC107;
+  color: #000000;
+}
+.title-heading {
+  font-size: 5rem;
+}
+.section-heading {
+  font-size: 2.5rem;
+  padding: 2%;
+}
+/*Buttons*/
+.show-starting-units-btn, .goto-pages-btn, .eaten-it-btn {
+  margin: 2.5rem 0 0;
+}
+/*Person Information*/
+.nm-section-container p {
+  margin: 0;
+  color: #FFC107;
+  font-size: 1.5rem;
+}
+.dy-section-container p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+/*Inputs*/
+input[type="text"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #E7E7E7;
+  border: none;
+  border-bottom: solid 2px #000000;
+  color: #232323;
+  margin-right: 20px;
+  text-align: center;
+}
+input[type="text"]:focus, select:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #FFC107;
+}
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #E7E7E7;
+  border: none;
+  border-bottom: solid 2px #000000;
+  color: #232323;
+  text-align: center;
+  width: 6rem;
+}
+.redunderline{
+	outline: none;
+    box-shadow: inset 0 -3px 0 0 red;
+}
+/*Tables*/
+.starting-units-table, .remaining-units-table {
+  margin: auto;
+}
+.starting-units-table td, .remaining-units-table td {
+  text-align: right;
+  width: 3rem;
+  padding: 10px 10px 0;
+}
+.starting-units-table td:nth-child(2), .remaining-units-table td:nth-child(2) {
+  text-align: left;
+}
+.category-table {
+	margin: 4% 25%;
+	
+}
+.category-table th, .category-table td {
+	width: 10%;
+	text-align: center;
+	padding: 4px 0;
+	border-bottom: solid 1px black;
+}
+/*Units Colors*/
+.yellow {
+  color: #AF9800;
+}
+ul .yellow:hover {
+	box-shadow: inset -5px -5px 0 0 #AF9800;
+}
+.blue {
+  color: #020055;
+}
+ul .blue:hover {
+	box-shadow: inset -5px -5px 0 0 #020055;
+ }
+.red {
+  color: #A70002;
+}
+ul .red:hover {
+	box-shadow: inset -5px -5px 0 0 #A70002;
+ }
+.light-blue {
+  color: #1CC6BF;
+}
+ul .light-blue:hover {
+	box-shadow: inset -5px -5px 0 0 #1CC6BF;
+ }
+.orange {
+  color: #B64D00;
+}
+ul .orange:hover {
+	box-shadow: inset -5px -5px 0 0 #B64D00;
+ }
+.green {
+  color: #008B13;
+}
+ul .green:hover {
+	box-shadow:  inset -5px -5px 0 0 #008B13;
+	
+ }
+.black {
+	color: #000000;
+}
+/*Anchors*/
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+::placeholder {
+  color: grey;
+  opacity: 0.7;
+}
+/*Food Intake*/
+.intakes {
+  margin: 0 20px 0 10px;
+  font-weight: 700;
+}
+/*Navigation & Categories*/
+.cat-body-section{
+	text-align: left;
+	position: relative;
+	display: flex;
+}
+.navigation{
+	position: relative;
+	width: 120px;
+}
+.navigation button {
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: #E7E7E7;
+	width: 130px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+li {
+	margin: 10px 0;
+	padding-left: 10%;
+	padding-bottom: 3px;
+	display: block;
+	text-align: left;
+	font-weight: 700;
+	font-size: 1.5rem;
+	width: 120px;
+	
+}
+li:hover{
+	cursor: pointer;
+	transition-delay: 0;
+  	transition-duration: 0.2s;
+ 	transition-property: all;
+  	transition-timing-function: ease-in-out;
+	transform: translate3d(5px, 5px, 0);
+	
+}
+li:focus{
+	background-color: #555555;
+}
+
+.categories {
+	position: relative;
+	left: 7%;
+	text-align: center;
+	width: 70%;
+	background-color: #D7D7D7;
+	border-radius: 10px;
+}
+/*Footer*/
+footer i {
+	font-size: 1.7rem;
+	margin: 20px 15px;
+}
+.fa-facebook:hover{
+	color: #4267B2;
+}
+.fa-twitter:hover{
+	color: #00ACEE;
+}
+.fa-instagram:hover{
+	color: #C13584;
+}
+.fa-envelope:hover{
+	color: #FFC107;
+}
+/*For Javascript Functionality*/
+.no-initial-display {
+  display: none;
+}

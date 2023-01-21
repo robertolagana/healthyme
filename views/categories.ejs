@@ -1,0 +1,57 @@
+<%- include("header") -%>
+
+
+
+<section id="cat-nv-section" class="cat-nv-section-container light-section">
+<div class="cat-body-section">
+	
+<!--Categories Navigation-->
+
+<div class="navigation">
+		<form id="navForm" action="/categories" method="post" >
+		<ul>
+			<button type="submit" name="fI" value="starch"><li class="yellow black">Starch</li></button> <!-- work on next time -->
+			<button type="submit" name="fI" value="protein"><li class="blue black">Protein</li></button>
+			<button type="submit" name="fI" value="fat"><li class="red black">Fat</li></button>
+			<button type="submit" name="fI" value="milk"><li class="light-blue black">Milk</li></button>
+			<button type="submit" name="fI" value="fruit"><li class="orange black">Fruit</li></button>
+			<button type="submit" name="fI" value="veggies"><li class="green black">Veggies</li>
+		</ul>	
+	</form>
+</div>
+		
+<!--Catergories Sections-->
+
+<div class="categories">
+	<h3 class="section-heading"><%= fHeading %></h3>	
+	<h5>Each item on this list is equivalent to 1 <%= fHeading %> Exchange Units</h5>
+	<table class="category-table">
+		<tr>
+			<th>Food Item</th>
+			<th>Amount (g)</th>
+			<th>Food State</th>
+		</tr>
+
+<% for(i=0; i<fList.length; i++) { %>
+		<tr>
+			<td><%= fList[i] %></td>
+			<td><%= fAmount[i] %></td>
+			<td class="food-state-icon"> <%= fState[i] %></td>
+		</tr>		
+		<% }  %>
+		
+ 	</table>		
+	
+</div>
+
+</div>
+
+
+
+<div class="goto-pages-btn"> 
+	<a href="foods"> <button class="btn btn-large btn-warning">Go To Foods Intake Page</button> </a> 
+  </div>
+
+</section>
+	
+<%- include("footer") -%>

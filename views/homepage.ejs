@@ -1,0 +1,69 @@
+<%- include("header") -%>
+
+<!--	Personal Information and Plan Selection-->
+<section id="pi-section" class="pi-section-container light-section">
+  <form action="/" method="post">
+    <h3 class="section-heading">Personal Information</h3>
+    <div class="personal-information">
+      <p> Name:
+        <input type="text" placeholder="Enter Name here" id="fN" name="fName" autocomplete="off">
+        Surname:
+        <input type="text" placeholder="Enter Surname here" id="lN" name="lName" autocomplete="off">
+      </p>
+      <p>Select your Plan:
+        <select name="plan" id="plan" placeholder="Select plan">
+          <option value="">Select A Plan</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </p>
+    </div>
+    <div class="show-starting-units-btn" type="submit">
+      <button class="btn btn-large btn-warning">Show Starting Units</button>
+    </div>
+  </form>
+</section>
+
+<!--	Starting Units-->
+<section id="su-section" class="su-section-container light-section no-initial-display">
+  <h3 class="section-heading">Starting Units</h3>
+  <table class="starting-units-table">
+    <tr>
+      <td><i class="fa-solid fa-circle yellow"></i></td>
+      <td> Starch </td>
+      <td> 6 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle blue"></i></td>
+      <td> Protein </td>
+      <td> 7 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle red"></i></td>
+      <td> Fats </td>
+      <td> 4 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle light-blue"></i></td>
+      <td> Milk </td>
+      <td> 3 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle orange"></i></td>
+      <td> Fruit </td>
+      <td> 2 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle green"></i></td>
+      <td> Veggies </td>
+      <td> ∞ </td>
+    </tr>
+  </table>
+  <div class="goto-pages-btn"> 
+	<a href="foods"> <button class="btn btn-large btn-warning">Go To Foods Intake Page</button> </a> 
+	<a href="categories"> <button class="btn btn-large btn-warning">Go To Categories Page</button> </a> 
+  </div>
+</section>
+
+<%- include("footer") -%>

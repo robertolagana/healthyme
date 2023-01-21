@@ -1,0 +1,79 @@
+<%- include("header") -%>
+
+<!--Person Information and Day-->
+<section id="nm-section" class="nm-section-container dark-section">
+<p>Welcome, <%= nameAndSurname %></p>
+</section>
+
+<section id="dy-section" class="dy-section-container colored-section">
+<p> <%= today %> </p>
+</section>
+
+<!--	Foods Eaten-->
+<section id="fe-section" class="fe-section-container light-section">
+  <h3 class="section-heading">Food Intake</h3>
+	
+  <% for (i=0; i<buttonCounting; i++){ %>
+				 
+  	<p>Food: <span class="intakes"><%= foodsListItem[i] %></span>
+       Weight: <span class="intakes"><%= weightsListItem[i] %></span>
+ 	</p>	
+				 
+  <%  }  %>
+	
+ <form action="/foods" method="post">
+	
+	<p>Food: <input class="<%= redClass %>" type="text" name="newFood" placeholder="Enter Food here" autocomplete="off">
+       Weight: <input class="<%= redClass %>" type="text" name="newWeight" placeholder="Enter Weight here" autocomplete="off">
+ 	   <button class="btn btn-large btn-warning" type="submit" name="addBtn"><strong>+</strong></button></p>
+	
+ </form>
+	
+	
+  <div class="eaten-it-btn">
+    <button id="eaten" class="btn btn-large btn-warning">I'v eaten the food!</button>
+  </div>
+</section>
+
+<!--	Remaining Units-->
+<section id="ru-section" class="ru-section-container light-section">
+  <h3 class="section-heading">Remaining Units</h3>
+  <table class="remaining-units-table">
+    <tr>
+      <td><i class="fa-solid fa-circle yellow"></i></td>
+      <td> Starch </td>
+      <td> 6 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle blue"></i></td>
+      <td> Protein </td>
+      <td> 7 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle red"></i></td>
+      <td> Fats </td>
+      <td> 4 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle light-blue"></i></td>
+      <td> Milk </td>
+      <td> 3 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle orange"></i></td>
+      <td> Fruit </td>
+      <td> 2 </td>
+    </tr>
+    <tr>
+      <td><i class="fa-solid fa-circle green"></i></td>
+      <td> Veggies </td>
+      <td> ∞ </td>
+    </tr>
+  </table>
+	
+  <div class="goto-pages-btn"> 
+	<a href="categories"> <button class="btn btn-large btn-warning">Go To Categories Page</button> </a> 
+  </div>
+</section>
+
+<%- include("footer") -%>
